@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProfileRoutingModule } from './profile-routing.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BoredComponent } from './bored/bored.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { BoredComponent } from './bored/bored.component';
     ReferenceComponent,
     ContactComponent,
     ProjectsComponent,
-    BoredComponent
+    BoredComponent,
+    NotfoundComponent
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},

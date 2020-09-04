@@ -1,3 +1,4 @@
+import { NotfoundComponent } from './notfound/notfound.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SkillsComponent } from './skills/skills.component';
@@ -16,7 +17,6 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: EducationComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent },
   { path: 'bored', component: BoredComponent}
 ];
 
