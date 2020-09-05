@@ -1,1 +1,86 @@
-<iframe width=100% height="538" src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="section" id="Things-to-do">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Things-to-do</div>
+
+    <div class="row">
+
+      <div class="card-layout">
+        <div class="ma-card">
+          <div class="header middle">
+            <div class="logo middle border-orange"> abcd </div>
+            <h5> ravi tej <span class="badge badge-secondary"> v 1.0.0</span></h5>
+            <p> description of the microapp </p>
+            <div class="tag"> ntx</div>
+          </div>
+
+          <!-- card details -->
+          <div class="body middle">
+            <div class="row middle">
+              <span class="text-success"><i class="fa fa-hearbeat"></i></span>
+              Health: good
+            </div>
+            <div class="row middle">
+              <span><i class="fas fa-chart-bar"></i></span>
+              Harmony Score: 80%
+            </div>
+          </div>
+
+          <!-- Card Footer -->
+          <div class="footer">
+            <p><i class="fas fa-sync"></i>updated at <br> <b> 14thaug,2018 12:30:46</b></p>
+            <button class="btn btn-link btn-sm" routerLinkActive="active" data-toggle="tooltip" data-placement="bottom"
+              title="Micro-app Details">Details</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="blog-entry">
+          <div class="card">
+            <div class="card-body">
+              <button routerLinkActive="active" (click)="onClick('games')">Games</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="blog-entry">
+          <div class="card">
+            <div class="card-body">
+              <a routerLink="articles" routerLinkActive="active">
+                <h4 class="card-title">Articles</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="blog-entry">
+          <div class="card">
+            <div class="card-body">
+              <a routerLink="jokes" routerLinkActive="active">
+                <h4 class="card-title">Jokes</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="blog-entry">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Videos</h4>
+              <button routerLinkActive="active" (click)="onClick('videos')">Videos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

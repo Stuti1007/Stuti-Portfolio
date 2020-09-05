@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map } from "rxjs/operators";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bored',
@@ -8,9 +7,13 @@ import { map } from "rxjs/operators";
   styleUrls: ['./bored.component.scss']
 })
 export class BoredComponent implements OnInit {
-  constructor(http: HttpClient) {
+  constructor(private router: Router) {
   }
 
+  onClick(url: string){
+    console.log(url);
+    this.router.navigate([url]);
+  }
 
   ngOnInit() {
   }

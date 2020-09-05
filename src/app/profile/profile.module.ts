@@ -14,6 +14,7 @@ import { ProfileRoutingModule } from './profile-routing.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BoredComponent } from './bored/bored.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { BoredModule } from './bored/bored.module';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     SnotifyModule,
     NgxSpinnerModule,
     ProfileRoutingModule,
+    BoredModule
   ],
   declarations: [
     ProfileComponent,

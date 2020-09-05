@@ -1,0 +1,90 @@
+.card {
+    margin: 10px 0;
+}
+
+.card-layout {
+    margin: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+}
+
+.ma-card {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    .header {
+        flex-direction: column;
+        padding: 20px 10px;
+        position: relative;
+        text-align: center;
+        background-color: royalblue;
+
+        .logo {
+            width: 64px;
+            height: 64px;
+            background-color: white;
+            border: 6px solid orange;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 10px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .tag {
+            position: absolute;
+            text-transform: uppercase;
+            top: 10px;
+            left: 0;
+            padding: 4px;
+            background-color: gray;
+            color: white;
+            font-size: 14px;
+        }
+    }
+
+    .body {
+        padding: 0 10px;
+        flex: 1;
+        flex-direction: column;
+        .row {
+            width: 100%;
+            padding: 6px 0;
+            span {
+                font-size: 20px;
+            }
+            border-bottom: 1px solid white;
+        }
+    }
+
+    .footer {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            font-size: 10px;
+            color: blue;
+            margin: 0;
+        }
+    }
+
+    .badge-secondary {
+        font-size: 11px;
+    }
+}
+
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
