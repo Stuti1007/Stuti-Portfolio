@@ -59,7 +59,7 @@
   
       .blog-entry h4{
         font-weight:560;
-        margin-top: 8px;
+        margin-top: 4px;
         font-size: 20px;
       }
   
@@ -70,3 +70,68 @@
             color: black
            
         }
+
+
+.btn {
+  background-color: #22577a;
+}
+
+.clearfix {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+  width: fit-content;
+  margin: 60px 0 0 0;
+  left: 120px;
+}
+
+.clearfix:hover {
+  background-color: #22577a;
+  opacity: 0.2;
+  width: fit-content;
+  left: 120px;
+}
+
+.touristAppInformation {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+} 
+
+.healthCareAppInformation {
+  position: absolute;
+  top: 900px;
+  left: 600px;
+}
+
+.banyanBrainInformation {
+  position: absolute;
+  top: 1500px;
+  left: 600px;
+}
+
+.edzagWebAppInformation {
+  position: absolute;
+  top: 2100px;
+  left: 600px;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.wireframe {
+  left: 20px;
+  position: relative;
+}
+
+.Userflow {
+  left: 35px;
+  position: relative;
+}
+
+.fa-arrow-right {
+  color: #22577a;
+}

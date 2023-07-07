@@ -11,5 +11,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
   }
+  display = false;
+  onPress() {
+    //this.display = true;
 
+    //To toggle the component
+    this.display = !this.display;
+  }
 }

@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "stuti-portfolio",
-    "prod": "stuti-portfolio"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "stuti-portfolio"
+  }
 }

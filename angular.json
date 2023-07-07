@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ravi-portfolio": {
+    "stuti-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ravi-portfolio:build"
+            "browserTarget": "stuti-portfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ravi-portfolio:build:production"
+              "browserTarget": "stuti-portfolio:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ravi-portfolio:build"
+            "browserTarget": "stuti-portfolio:build"
           }
         },
         "test": {
@@ -94,6 +94,7 @@
             ],
             "styles": [
               "src/styles.scss"
+             
             ],
             "scripts": []
           }
@@ -115,15 +116,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ravi-portfolio:serve"
+            "devServerTarget": "stuti-portfolio:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ravi-portfolio:serve:production"
+              "devServerTarget": "stuti-portfolio:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ravi-portfolio"
+  "defaultProject": "stuti-portfolio"
 }

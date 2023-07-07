@@ -7,7 +7,6 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProfileRoutingModule } from './profile-routing.module';
@@ -15,6 +14,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BoredComponent } from './bored/bored.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BoredModule } from './bored/bored.module';
+import { CaseStudyComponent } from './case-study/case-study.component';
+import { BanyanBrainCaseStudyComponent } from './banyan-brain-case-study/banyan-brain-case-study.component';
+import { EdzagCaseStudyComponent } from './edzag-case-study/edzag-case-study.component';
 
 @NgModule({
   imports: [
@@ -31,11 +33,13 @@ import { BoredModule } from './bored/bored.module';
     SkillsComponent,
     ExperienceComponent,
     EducationComponent,
-    ReferenceComponent,
     ContactComponent,
     ProjectsComponent,
     BoredComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CaseStudyComponent,
+    BanyanBrainCaseStudyComponent,
+    EdzagCaseStudyComponent,
   ],
   providers: [
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},

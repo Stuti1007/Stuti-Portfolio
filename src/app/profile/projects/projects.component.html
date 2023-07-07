@@ -1,8 +1,24 @@
 <div class="section" id="projects">
   <div class="container cc-education">
     <div class="h4 text-center mb-4 title">Projects</div>
+    <div class="clearfix">
+      <img (mouseenter)="isTouristAppHidden = !isTouristAppHidden" (mouseleave)="isTouristAppHidden = !isTouristAppHidden" rounded src="assets/images/touristapp.jpg" width="900"/>
+    </div>
 
-    <div class="row">
+    <ng-container *ngIf="isTouristAppHidden">
+      <div class="touristAppInformation">
+       <h2> Tourist App </h2>
+       <p>An end to end App for travellers</p> 
+       <p>UX/UI Product Design | Problem-Solving <a href = 'https://www.figma.com/proto/vvu6KPvKQFFZWl6Mzk6F29/tour-App?node-id=0-1'> <i class='fa fa-arrow-right fa-2x'></i> </a></p> 
+      </div>
+    </ng-container>
+    
+    <div id="comp-render" *ngIf="display">
+       <router-outlet></router-outlet>
+   </div> 
+    
+
+    <!-- <div class="row">
 
 
       <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
@@ -12,7 +28,7 @@
               <h4 class="card-title">Restaurant Website</h4>
               <h5 class="card-text"><b>Tools :</b> Figma </h5>
               <a href="https://www.figma.com/proto/fU02HS25bfUD07S5fKqhXQ/Food-Website?node-id=1-2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2"
-                class="btn btn-primary stretched-link">Figma Link</a>
+                class="btn btn-primary stretched-link">View</a>
 
             </div>
           </div>
@@ -24,10 +40,10 @@
           <div class="card">
             <div class="card-body">
               <h4 class="card-title">Travel Booking App</h4>
-              <h5 class="card-text"><b>Tool :</b> Figma </h5>
+              <h5 class="card-text"><b>Tool :</b> Figma</h5>
 
               <a href="https://www.figma.com/proto/vvu6KPvKQFFZWl6Mzk6F29/Untitled?node-id=0-443&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=0%3A443"
-                class="btn btn-primary stretched-link">Figma Link</a>
+                class="btn btn-primary stretched-link">View</a>
             </div>
           </div>
         </div>
@@ -40,7 +56,7 @@
               <h4 class="card-title">Social Media Page Design</h4>
               <h5 class="card-text"><b>Tools :</b> Adobe photoshop,SKetch </h5>
               <a href="https://www.instagram.com/banyanbrain/?hl=en"
-                class="btn btn-primary stretched-link">Socialmedia Link</a>
+                class="btn btn-primary stretched-link">View</a>
             </div>
           </div>
         </div>
@@ -54,7 +70,7 @@
               <h4 class="card-title">Website Design</h4>
               <h5 class="card-text"><b>Technology :</b> Adobe Photoshop, Illustration and Figma Wireframe </h5>
               <a href="https://banyanbrain.com/"
-                class="btn btn-primary stretched-link">Website Link</a>
+                class="btn btn-primary stretched-link">View</a>
             </div>
           </div>
         </div>
@@ -68,7 +84,7 @@
               <h4 class="card-title">Pharma Website Design</h4>
               <h5 class="card-text"><b>Tools :</b> Wordpress, Adobe Photoshop </h5>
               <a href="https://chemys-tro.com/"
-                class="btn btn-primary stretched-link">Website Link</a>
+                class="btn btn-primary stretched-link">View</a>
             </div>
           </div>
         </div>
@@ -81,7 +97,7 @@
               <h4 class="card-title">Edtech Website Design</h4>
               <h5 class="card-text"><b>Tools :</b> Adobe Photoshop Illustrator, Sketch </h5>
               <a href="https://www.edzag.com/"
-                class="btn btn-primary stretched-link">Website Link</a>
+                class="btn btn-primary stretched-link">View</a>
             </div>
           </div>
         </div>
@@ -95,10 +111,93 @@
               <h4 class="card-title">Healthcare App Design</h4>
               <h5 class="card-text"><b>Tools:</b> Figma </h5>
               <a href="https://www.figma.com/community/file/1215980675624792419"
-                class="btn btn-primary stretched-link">GithubLink</a>
+                class="btn btn-primary stretched-link">Click</a>
             </div>
           </div>
         </div>
       </div>
+
+    </div> -->
+  
+    <div class="clearfix">
+      <img (mouseenter)="isHealthCareAppHidden = !isHealthCareAppHidden" (mouseleave)="isHealthCareAppHidden = !isHealthCareAppHidden" rounded src="assets/images/Healthcareapp.jpg" width="900"/>
+    </div>
+
+    <ng-container *ngIf="isHealthCareAppHidden">
+      <div class="healthCareAppInformation">
+       <h2>Health Care App</h2>
+       <p>An end to end App for travellers</p> 
+       <p>UX/UI Product Design | Problem-Solving <a href = 'https://www.figma.com/proto/5NxFOLSJKS25qh1Pcu2jNK/Healthcare-app-design-(Community)?type=design&t=Gm91RPbqfmkLMLpP-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3&node-id=1-3'> <i class='fa fa-arrow-right fa-2x'></i> </a></p> 
+      </div>
+    </ng-container>
+
+    <div class="clearfix">
+      <img (mouseenter)="isBanyanBrainHidden = !isBanyanBrainHidden" (mouseleave)="isBanyanBrainHidden = !isBanyanBrainHidden" rounded src="assets/images/Banyanbrain.jpg" width="900" />
+    </div>
+
+    <ng-container *ngIf="isBanyanBrainHidden">
+      <div class="banyanBrainInformation">
+       <h2>Banyanbrain Web App</h2>
+       <p>Its a Digital Marketing Agency that provides marketing solutions</p> 
+       <p>UI/UX Design | Web Design | Branding <a routerLink="banyanbraincasestudy"><i class='fa fa-arrow-right fa-2x' (click)="onPress()"></i></a></p> 
+      </div>
+    </ng-container>
+
+    <div class="clearfix">
+      <img (mouseenter)="isEdzagWebAppHidden = !isEdzagWebAppHidden" (mouseleave)="isEdzagWebAppHidden = !isEdzagWebAppHidden" rounded src="assets/images/Edzag.jpg" width="900"/>
+    </div>
+
+    <ng-container *ngIf="isEdzagWebAppHidden">
+      <div class="edzagWebAppInformation">
+       <h2>Edzag Web App</h2>
+       <p>One stop Academic platfrom for Students, Teachers and Parents</p> 
+       <p>UI/UX Design | Web Design | Branding <a routerLink="edzagcasestudy"><i class='fa fa-arrow-rightfa-2x' (click)="onPress()"></i></a></p> 
+      </div>
+    </ng-container>
+  </div>
+  </div>
+  
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Wireframes</div>
+
+    <div class="wireframe">
+
+      <div>
+        <img rounded src="assets/images/wireframe1.jpg" width="1100"/>
+      </div>
+
+      <div>
+        <img rounded src="assets/images/wireframe2.jpg" width="1100"/>
+      </div>
+    </div>     
+  </div>   
+            
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">User Flow</div>
+
+    <div class="Userflow">
+      
+      <div>
+        <img rounded src="assets/images/userflow1.jpg" width="1000" />
+      </div>
+
+      <div>
+        <img rounded src="assets/images/userflow2.jpg" width="1000" />
+      </div>
+          
+      <div>
+        <img rounded src="assets/images/userflow3.jpg" width="1000" />
+      </div>
+      
+      <div>
+        <img rounded src="assets/images/userflow4.jpg" width="1000" />
+      </div>
+      
+      <div>
+        <img rounded src="assets/images/userflow5.jpg" width="1000" />
+      </div>
+
+    </div>
+  </div>
 
       
